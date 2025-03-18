@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <header>
-            <div>
+    <div class="container">
+        <header class="header">
+            <div class="header-text-section">
                 <h2>Hello, I'm </h2>
                 <h1>David Bucio - Paz</h1>
                 <h2>Software Engineer | Java | Class of 2028</h2>
                 <p>Put bio here later and stuff. idk enjoy the cat image.</p>
             </div>
-            <div>
-                <img src="Catmeme.jpg" alt="img" width="400px">
+            <div class="header-image-section">
+                <img class="header-image" src="https://media1.tenor.com/m/DFfCL02_DCcAAAAC/cat-look.gif" alt="img" width="400px">
             </div>
         </header>
 
-        <section>
-            <div>Skills</div>
-            <div>
+        <section class="skills-section">
+            <div class="skills-title">Skills</div>
+            <div class="skills-card">
                 <p>HTML, CSS, Javascript, Java</p>
             </div>
             
@@ -29,9 +30,17 @@
 
         <section>
             <h2>Projects</h2>
-            <div>
+            <div class="carousel">
                 <button>&#8592;</button>
-                <div>
+                <div class="projects">
+
+                    <div class="projects-card">
+                        <img class="project-image" src="data:image/jpeg;base64,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" alt="An image">
+                        <h3 class="project-title">A project</h3>
+                        <p class="project-text">Some random text for Now</p>
+                        <a class="project-link" href=""></a>
+
+                    </div>
 
                 </div>
                 <button>&#8594;</button>
@@ -112,6 +121,15 @@
 
         </section>
 
+        <footer>
+            <div>
+                <p>&copy; 2025 David Bucio - Paz</p>
+                <a target="_blank" href="https://www.linkedin.com/in/davidbuciopaz/">LinkedIn</a>
+                <a target="_blank" href="https://github.com/Davbp24">GitHub</a>
+                
+
+            </div>
+        </footer>
 
     </div>
 </body>
