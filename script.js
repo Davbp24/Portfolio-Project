@@ -7,7 +7,7 @@ const projects = document.getElementById("projects")
 const gap = 30
 let width = projects.offsetWidth
 
-
+//Loading content on page
 document.addEventListener("DOMContentLoaded", event => {
 
     projectsInfo.forEach(project => {
