@@ -1,22 +1,26 @@
-<!DOCTYPE html>
+
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Personal Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div class="container">
         <header class="header">
-            <div class="header-text-section">
+            <div class="header-text-section"> <!--Info-->
                 <h2>Hello, I'm </h2>
                 <h1>David Bucio - Paz</h1>
                 <h2>Software Engineer | Java | Class of 2028</h2>
                 <p>Put bio here later and stuff. idk enjoy the cat image.</p>
             </div>
-            <div class="header-image-section">
-                <img class="header-image" src="https://media1.tenor.com/m/DFfCL02_DCcAAAAC/cat-look.gif" alt="img" width="400px">
+            <div class="header-image-section"> <!--Pfp-->
+                <img class="header-image" src="Catmeme.jpg" alt="" width="500px"/>
             </div>
         </header>
 
@@ -25,113 +29,90 @@
             <div class="skills-card">
                 <p>HTML, CSS, Javascript, Java</p>
             </div>
-            
         </section>
 
-        <section>
-            <h2>Projects</h2>
-            <div class="carousel">
-                <button>&#8592;</button>
-                <div class="projects">
-
-                    <div class="projects-card">
-                        <img class="project-image" src="" alt="An image">
-                        <h3 class="project-title">A project</h3>
-                        <p class="project-text">Some random text for Now</p>
-                        <a class="project-link">Link</a>
-
-                    </div>
-
+        <section class="projects-section">
+             <h2>Projects</h2>
+             <div class="carousel" id="carousel">
+                <button id="back">&#8592;</button>
+                <div class="projects" id="projects">
+                    
                 </div>
-                <button>&#8594;</button>
+                <button id="next">&#8594;</button>
             </div>
         </section>
 
-        <section>
-
-            <div>Experiences</div>           
-            <div>
-
-              <div>
-                <div>
+        <section class="experiences">
+            <div class="experiences-title">Experiences</div>
+            <div class="experience">
+                <div class="experience-header">
                     <h3>Init Build Program - Game Dev</h3>
                     <h3>Jan 2025 - April 2025 </h3>
                 </div>
-            
-                <p>Collaborated in the creation of a replica of Overcooked
-                    <span>...</span>
-                    <span>Collaborated in the creation of a replica of Overcooked with creative intent</span>
+                <p>Collaborated in the creation of a replica of Overcooked<span class="ellipsis">...</span> <span class="hidden-text">Collaborated in the creation of a replica of Overcooked with creative intent.</span>
                 </p>
-
             </div>
 
-
-            <div>
-                <div>
+            <div class="experience">
+                <div class="experience-header">
                     <h3>Coming Soon</h3>
-                    <h3>??? - Presently</h3>
+                    <h3>??? - Present</h3>
                 </div>
-            
-                <p>Collaborated in the creation of wishful thinking
-                    <span>...</span>
-                    <span>Collaborated in the creation of wishful thinking and creativity of my delusion.</span>
-                </p>
+                <p>Haven't done this yet...<span class="ellipsis">...</span> <span class="hidden-text">Haven't done this yet unfotunately and stuff so like....</span></p>
             </div>
-
-          </div>
-
+            
         </section>
 
-        <section>
-            <h3>Inquiries and Information</h3>
-            <p>If you're interested in my work, let's connect! Here's more about me.</p>
-
-
-            <div><!--First div of this section-->
-                <div>
-                    <div> <!--Question Div-->
+        <section>           
+            <div class="info-section-container">
+                <h3>Inquiries and Information</h3>
+                <p>Interested in my work? Here's more about me. Let's connect!</p>
+                <div class="info-section-wrapper">
+                <div class="info-wrapper">
+                    <div class="question">
                         <h4>Work and Skills</h4>
                     </div>
-                    <div><!---Answer Div-->
-                        I specialize in Java, currently expanding my knowledge of it and dabble in game development
+                    <div class="answer">
+                        <p>I specialize in Java, currently expanding my knowledge of it and dabble in game development</p>
                     </div>
                 </div>
-                
-            <div> <!--Second div of this sectionn-->
-                <div> <!--Question Div-->
-                    <h4>Methods of Contact</h4>
+
+                <div class="info-wrapper">
+                    <div class="question">
+                        <h4>Methods of Contact</h4>
+                    </div>
+                    <div class="answer">
+                        <p>Phone: 305-975-9240</p> 
+                        <p>Email: daviddbp.buciopaz@gmail.com</p>
+                    </div>
+
                 </div>
-                <div><!---Answer Div-->
-                   <p>Phone: 305-975-9240</p> 
-                   <p>Email: daviddbp.buciopaz@gmail.com</p>
+                <div class="info-wrapper">
+                    <div class="question">
+                        <h4>A Little About Me</h4>
+                    </div>
+                    <div class="answer">
+                        <p>I am 19 years old, aspiring software engineer who is constantly learning.</p>
+                    </div>
+                </div>
                 </div>
             </div>
+            <div class="form-container">
+                <form id="form">
 
-               <div><!--Third div of this section-->
-                    <div> <!--Question Div-->
-                        <h4>A little about me</h4>
-                    </div>
-                    <div><!---Answer Div-->
-                        I am 19 years old, aspiring software engineer who is constantly learning.
-                    </div>
-                </div>
-
+                </form>
 
             </div>
-
         </section>
-
+          
         <footer>
-            <div>
-                <p>&copy; 2025 David Bucio - Paz</p>
-                <a target="_blank" href="https://www.linkedin.com/in/davidbuciopaz/">LinkedIn</a>
-                <a target="_blank" href="https://github.com/Davbp24">GitHub</a>
-                
-
+            <div class="footer-content">
+                <p>&copy; 2025 (David)</p>
+                <a href="https://www.linkedin.com/in/davidbuciopaz/">LinkedIn</a>
+                <a href="https://github.com/Davbp24">Github</a>
             </div>
         </footer>
-
+        <script src="script.js" type="module"></script>
     </div>
 </body>
 </html>
-
